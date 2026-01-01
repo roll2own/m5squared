@@ -93,6 +93,7 @@ This is for **your own wheels**. Don't be creepy.
 ## Links
 
 - Protocol docs: [`doc/` directory](https://github.com/roll2own/m5squared/tree/main/doc)
+- Supplementary resources (media, manuals, talk materials and other non-codey stuff: [m5squared-resource repo](https://github.com/roll2own/m5squared-resources)
 - 39C3 Talk: *["Pwn2Roll: Who Needs a 595€ Remote When You Have wheelchair.py?"](https://media.ccc.de/v/39c3-pwn2roll-who-needs-a-599-remote-when-you-have-wheelchair-py)*
 
 ### Media Coverage

@@ -1,29 +1,30 @@
-# wheelchair.py
+# m5squared aka. wheelchair.py
 
 **Your wheelchair, your rules.**
 
 Python toolkit for the Alber e-motion M25 power-assist wheels. Because paying €595 for a Bluetooth remote that does less than a Python script is absurd.
 
-Presented at 39C3 Hamburg: *"Pwn2Roll: Who Needs a 595€ Remote When You Have wheelchair.py?"*
+Presented at 39C3 Hamburg: *["Pwn2Roll: Who Needs a 595€ Remote When You Have wheelchair.py?"](https://media.ccc.de/v/39c3-pwn2roll-who-needs-a-599-remote-when-you-have-wheelchair-py)*
 
 ## What This Does
 
-- **Decrypt the "encrypted" Bluetooth protocol** - AES-128-CBC, nothing fancy
-- **Replace the €595 ECS remote** - Same features, zero cost, more control
-- **Bypass the €99 in-app purchase** - All the "premium" features, free
-- **Access dealer-only parameters** - Your wheels, your data
+- **Decrypt the "encrypted" Bluetooth protocol:** AES-128-CBC, nothing fancy
+- **Replace the €595 ECS remote:** Same features, zero cost, more control
+- **Bypass all of the in-app purchases:** All the "premium" features, free
+    - Currently we support out-of-the-box: ECS remote, speed increase to 8.5km/h, parking mode. *Cruise* mode and the push counter are possible in theory, but not tested yet. Stay tuned, this will be tested soonish (it's also the ground work for replacing the knob-style remote).
+- **Access dealer-only parameters:** Your wheels, your data
 
 ## The €595 Remote vs. This Script
 
-| Feature | Official ECS Remote | wheelchair.py |
-|---------|---------------------|---------------|
-| Price | €595 | Free |
-| Read battery | Yes | Yes |
-| Change assist level | Yes | Yes |
-| Toggle hill hold | Yes | Yes |
-| Read raw sensor data | No | Yes |
-| Adjust drive parameters | No | Yes |
-| Works on Linux | No | Obviously |
+| Feature                 | Official ECS Remote | wheelchair.py |
+| ----------------------- | ------------------- | ------------- |
+| Price                   | €595                | Free          |
+| Read battery            | Yes                 | Yes           |
+| Change assist level     | Yes                 | Yes           |
+| Toggle hill hold        | Yes                 | Yes           |
+| Read raw sensor data    | No                  | Yes           |
+| Adjust drive parameters | No                  | Yes           |
+| Works on Linux          | No                  | Obviously     |
 
 ## Quick Start
 
@@ -44,15 +45,15 @@ python m25_ecs.py --left-addr AA:BB:CC:DD:EE:FF --right-addr 11:22:33:44:55:66 \
 
 ## Tools
 
-| Script | What it does |
-|--------|--------------|
+| Script             | What it does                                      | 
+| ------------------ | ------------------------------------------------- |
 | `m25_qr_to_key.py` | QR code → AES key (their encoding is... creative) |
-| `m25_ecs.py` | The main event: read status, change settings |
-| `m25_decrypt.py` | Decrypt captured Bluetooth packets |
-| `m25_encrypt.py` | Encrypt packets for transmission |
-| `m25_analyzer.py` | Make sense of the packet soup |
-| `m25_parking.py` | Remote movement control (use responsibly) |
-| `m25_bluetooth.py` | Scan, connect, send/receive |
+| `m25_ecs.py`       | The main event: read status, change settings      |
+| `m25_decrypt.py`   | Decrypt captured Bluetooth packets                |
+| `m25_encrypt.py`   | Encrypt packets for transmission                  |
+| `m25_analyzer.py`  | Make sense of the packet soup                     |
+| `m25_parking.py`   | Remote movement control (use responsibly)         |
+| `m25_bluetooth.py` | Scan, connect, send/receive                       |
 
 ## Getting Your Keys
 
@@ -89,11 +90,13 @@ This is for **your own wheels**. Don't be creepy.
 - Your own devices: Yes
 - Other people's wheelchairs: Absolutely not
 
-## License
-
-AGPL-3.0 - Keep it open.
-
 ## Links
 
-- 39C3 Talk: *"Pwn2Roll: Who Needs a 595€ Remote When You Have wheelchair.py?"*
-- Protocol docs: `doc/` directory
+- Protocol docs: [`doc/` directory](https://github.com/roll2own/m5squared/tree/main/doc)
+- 39C3 Talk: *["Pwn2Roll: Who Needs a 595€ Remote When You Have wheelchair.py?"](https://media.ccc.de/v/39c3-pwn2roll-who-needs-a-599-remote-when-you-have-wheelchair-py)*
+
+### Media Coverage
+
+- [[DE] Warum eine Multiple-Sklerose-Erkrankte ihren Rollstuhl hackte](https://www.spiegel.de/netzwelt/hackerkonferenz-39c3-warum-eine-multiple-sklerose-erkrankte-ihren-rollstuhl-hackte-a-169573b3-dbc9-4aed-bc33-1cc39cee6971)
+- [[DE] Wie eine Multiple-Sklerose-Erkrankte die Paywall ihres Rollstuhls knackte](https://www.derstandard.at/story/3000000302326/wie-eine-multiple-sklerose-erkrankte-die-paywall-ihres-rollstuhls-knackte)
+- [[DE] 39C3: Rollstuhl-Security – Wenn ein QR-Code alle Schutzmechanismen aushebelt](https://www.heise.de/news/39C3-Rollstuhl-Security-Wenn-ein-QR-Code-alle-Schutzmechanismen-aushebelt-11126816.html)

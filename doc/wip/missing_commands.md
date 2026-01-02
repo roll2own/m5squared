@@ -4,7 +4,6 @@ Based on `adb logcat` analysis with several tests, 2026-01-02.
 Several tests using Cruise Mode, Dealer Mode features, on/off via ECS Remote feature.
 
 
-Apparen
 ---
 
 ## TX Commands not implemented ATM
@@ -97,7 +96,7 @@ RX: 05 01 ff 00 (ACK)
 Note: WRITE_SYSTEM_MODE uses same param 0x10 but with payload 0x01 (connect) or 0x02 (standby)
 ANNOUNCE_DISCONNECT specifically uses payload 0x01 in disconnect context
 
-#TODO do a clean log of standy/shutdown sequences
+TODO do a clean log of standy/shutdown sequences
 ---
 
 ### Service 0x02 (ACTOR_BUZZER)

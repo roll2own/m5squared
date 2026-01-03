@@ -9,6 +9,23 @@ dependencies = [
     "pycryptodome>=3.15.0",
 ]
 
+[tool.setuptools]
+py-modules = [
+    "m25_analyzer",
+    "m25_bluetooth",
+    "m25_crypto",
+    "m25_decrypt",
+    "m25_ecs",
+    "m25_ecs_driveprofiles",
+    "m25_encrypt",
+    "m25_parking",
+    "m25_protocol",
+    "m25_protocol_data",
+    "m25_qr_to_key",
+    "m25_spp",
+    "m25_utils",
+]
+
 [project.urls]
 Repository = "https://github.com/roll2own/m5squared"
 Documentation = "https://github.com/roll2own/m5squared/tree/main/doc"

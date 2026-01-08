@@ -66,6 +66,8 @@ Each wheel has a QR code sticker. That's your key to the kingdom.
 
 Both wheels have different keys. Yes, you need both.
 
+Once you've saved your keys, consider taping over the QR codes. They're the keys to your wheels.
+
 ## Protocol TL;DR
 
 Bluetooth SPP on channel 6. Packets look like:
@@ -102,3 +104,13 @@ This is for **your own wheels**. Don't be creepy.
 - [[DE] Wie eine Multiple-Sklerose-Erkrankte die Paywall ihres Rollstuhls knackte](https://www.derstandard.at/story/3000000302326/wie-eine-multiple-sklerose-erkrankte-die-paywall-ihres-rollstuhls-knackte)
 - [[DE] 39C3: Rollstuhl-Security – Wenn ein QR-Code alle Schutzmechanismen aushebelt](https://www.heise.de/news/39C3-Rollstuhl-Security-Wenn-ein-QR-Code-alle-Schutzmechanismen-aushebelt-11126816.html)
 - [[EN] Louis Rossmann: Wheelchairs have paywalls and digital locks now (YouTube video)](https://www.youtube.com/watch?v=5yWcXPDJQ7k)
+
+## Security, Safety and Common Sense
+
+This is non-profit research code. No exploits, no vulnerabilities. It's just documentation and tools for interoperability with a protocol that already exists.
+
+The security model here is identical to what the official apps use: if you don't have the QR code, you don't get access. We're not bypassing anything, just using the same protocol with our own code. Your wheels, your keys, your choice of software.
+
+That said, this only applies to your own equipment. Using these tools on someone else's wheelchair without explicit consent isn't just unethical, it might cause serious safety issues. Also: creepy.
+
+The author(s) take responsible disclosure seriously. These are mobility devices that people depend on every day, and that should come before making a point.

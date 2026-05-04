@@ -1,5 +1,14 @@
 # m5squared aka. wheelchair.py
 
+## Information on Migration to Codeberg
+
+**We've moved to Codeberg!** This organization and repository have migrated to Codeberg. Please update your bookmarks, remotes
+and links: **https://codeberg.org/roll2own/m5squared**
+
+This GitHub won't receive any updates. All new issues, PRs, etc. should go to Codeberg from now on. Existing issues were migrated to https://codeberg.org/roll2own/m5squared/issues/.
+
+## Actual old README content
+
 **Your wheelchair, your rules.**
 
 Python toolkit for the Alber e-motion M25 power-assist wheels. Because paying €595 for a Bluetooth remote that does less than a Python script is absurd.
